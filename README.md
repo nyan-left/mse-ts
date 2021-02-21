@@ -9,7 +9,7 @@ Mean Squared Error estimation function + type definitions.<br />
 ## Installing
 
 ```bash
-$ npm install sme-ts
+$ npm install mse-ts
 ```
 
 ## Importing the package
