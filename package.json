@@ -17,10 +17,7 @@
     "CHANGELOG.md",
     "build/**/*"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nyan-left/mse-tsgit"
-  },
+  "repository": "https://github.com/nyan-left/mse-ts",
   "author": "Deimantas Jakovlevas",
   "license": "MIT",
   "bugs": {
@@ -42,5 +39,16 @@
     "typescript": "^4.1.5",
     "mocha": "^8.3.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "mse",
+    "mean",
+    "square",
+    "squared",
+    "error",
+    "machine learning",
+    "estimator",
+    "statistics",
+    "average"
+  ]
 }
