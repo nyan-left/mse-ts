@@ -49,6 +49,9 @@ output
 <!-- This example is from https://github.com/bytespider/mse -->
 
 ```ts
+import mse from 'mse-ts';
+
+
 const y_true = [
   188, 100, 114, 171, 171, 173, 230, 149,
   191,  81,  61,  62, 127, 217,  62,  81,
