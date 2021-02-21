@@ -1,6 +1,6 @@
 {
   "name": "mse-ts",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Typed mean squared error estimator",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
