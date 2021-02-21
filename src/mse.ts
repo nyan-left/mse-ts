@@ -1,21 +1,21 @@
 interface Options {
-  // eslint-disable-next-line no-unused-vars
-  hypothesis? : (_n: number) => number,
-  step? : 1,
+  step? : number,
 }
-const meanSquaredError = (yTrue : number[], yPred : number[], options : Options) => {
-  const { step, hypothesis } = options;
-  let totalSquaredError = 0;
+const meanSquaredError = (yTrue : number[], yPred : number[], options? : Options) => {
+  const hypothesis = (_yTrue, _yPred?, _i?) => _yTrue;
+  const step = options?.step || 1;
+
+  let totalError = 0;
 
   const m = yTrue.length;
 
   for (let i = 0; i < m; i += step) {
-    const theta = hypothesis ? hypothesis(yTrue[i]) : yTrue[i];
-    const squaredError = (theta - yPred[i]) ** 2;
-    totalSquaredError += squaredError;
+    if(yPred[i] === undefined) throw new Error(`yPred at index ${i} is undefined`)
+    const error = (hypothesis(yTrue[i]) - yPred[i]) ** 2;
+    totalError += error;
   }
 
-  return totalSquaredError / m;
+  return totalError / m;
 };
 
 export default meanSquaredError;
